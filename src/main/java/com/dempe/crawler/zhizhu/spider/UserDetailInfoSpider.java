@@ -1,6 +1,7 @@
-package com.dempe.crawler.zhizhu;
+package com.dempe.crawler.zhizhu.spider;
 
 
+import com.dempe.crawler.CrawSpider;
 import com.dempe.crawler.zhizhu.pipeline.UserDetailInfoPipeline;
 import com.dempe.crawler.zhizhu.processor.UserDetailInfoProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import us.codecraft.webmagic.Spider;
  * @date: 2016年1月27日--下午12:11:17
  */
 @Component
-public class UserDetailInfoSpider implements Crawl {
+public class UserDetailInfoSpider implements CrawSpider {
 
     private static final String START_URL = "http://www.zhihu.com/people/excited-vczh";
 

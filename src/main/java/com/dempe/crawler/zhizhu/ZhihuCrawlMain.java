@@ -7,6 +7,8 @@ package com.dempe.crawler.zhizhu;
  * Time: 下午 8:13
  * To change this template use File | Settings | File Templates.
  */
+import com.dempe.crawler.zhizhu.spider.UserBaseInfoSpider;
+import com.dempe.crawler.zhizhu.spider.UserDetailInfoSpider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
