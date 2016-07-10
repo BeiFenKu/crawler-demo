@@ -24,8 +24,10 @@ public class ShuoShuoSpider implements CrawSpider {
 
     @Override
     public void crawl() {
+        String page = pageProcessor.getStart_url().replace("page", "0");
+        System.out.println("pageUrl====>" + page);
         us.codecraft.webmagic.Spider.create(pageProcessor).thread(10)
-                .addUrl(pageProcessor.getStart_url().replace("page", "0"))
+                .addUrl(page)
                 .addPipeline(shuoShuoPipeline)
                 .run();
 

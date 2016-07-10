@@ -155,8 +155,9 @@ public class HelpUtils {
 	}
 
 	public static void main(String[] args) {
-		String zanUrl = getZanUrl();
-		System.out.println(zanUrl);
+		String startUrl = getStartUrl();
+		System.out.println("--------");
+		System.out.println(startUrl);
 	}
 
 }
